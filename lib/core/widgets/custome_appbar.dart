@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:food_app/core/colors.dart';
+import 'package:food_app/core/utils/colors.dart';
 
 class CustomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   const CustomeAppbar({super.key});
@@ -9,7 +9,9 @@ class CustomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: AppColor.primaryColor,
     title: Column(
+      
           children:  [
             Text('Current location ', style: TextStyle(color:AppColor.greyColor,fontSize: 14),),
             Row(
